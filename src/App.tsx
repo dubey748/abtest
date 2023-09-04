@@ -16,7 +16,7 @@ const UserDisplay: React.FC = () => {
   // Function to fetch user data from the API
   const fetchUserData = async () => {
     try {
-      const response = await axios.get('https://randomuser.me/api?results=5'); // Fetching 5 users for example
+      const response = await axios.get('https://randomuser.me/api?results=5'); 
       const users = response.data.results;
       setUserList(users);
       // Save data to local storage
@@ -42,11 +42,11 @@ const UserDisplay: React.FC = () => {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    minHeight: '100vh', // Make the container take up the full viewport height
+    minHeight: '100vh', 
   };
 
   const tableStyle: React.CSSProperties = {
-    border: '1px solid #ccc', // Add a border for styling
+    border: '1px solid #ccc', 
   };
 
   return (
